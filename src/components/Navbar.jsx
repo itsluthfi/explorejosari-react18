@@ -97,37 +97,37 @@ export default function Navbar() {
             }
           >
             <ul className="bg-white font-lg">
-              <li className="w-screen border-b-2 border-zinc-300">
+              <li className="p-[10px] w-screen border-b-2 border-zinc-300">
                 <a href="/" className="hover:text-hijau" onClick={closeNav}>
                   Beranda
                 </a>
               </li>
-              <li className="w-full border-b-2 border-zinc-300">
+              <li className="p-[10px] w-full border-b-2 border-zinc-300">
                 <a href="/" className="hover:text-hijau" onClick={closeNav}>
                   Profil Dusun
                 </a>
               </li>
-              <li className="w-full border-b-2 border-zinc-300">
+              <li className="p-[10px] w-full border-b-2 border-zinc-300">
                 <a href="/" className="hover:text-hijau" onClick={closeNav}>
                   Berita & Informasi
                 </a>
               </li>
-              <li className="w-full border-b-2 border-zinc-300">
+              <li className="p-[10px] w-full border-b-2 border-zinc-300">
                 <a href="/" className="hover:text-hijau" onClick={closeNav}>
                   UMKM
                 </a>
               </li>
-              <li className="w-full border-b-2 border-zinc-300">
+              <li className="p-[10px] w-full border-b-2 border-zinc-300">
                 <a href="/" className="hover:text-hijau" onClick={closeNav}>
                   Galeri
                 </a>
               </li>
-              <li className="w-full border-b-2 border-zinc-300">
+              <li className="p-[10px] w-full border-b-2 border-zinc-300">
                 <a href="/" className="hover:text-hijau" onClick={closeNav}>
                   Kontak
                 </a>
               </li>
-              <li className="w-full border-b-2 border-zinc-300 hover:text-merah ">
+              <li className="p-[10px] w-full border-b-2 border-zinc-300 hover:text-merah ">
                 <button onClick={closeNav}>Tutup</button>
               </li>
             </ul>
