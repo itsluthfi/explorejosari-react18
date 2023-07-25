@@ -12,7 +12,7 @@ export default function Home() {
       <Navbar />
       {/* Hero section */}
       <div
-        className="w-full h-[600px] bg-center bg-cover"
+        className="w-full h-[600px] bg-center bg-cover animate-background"
         style={{
           backgroundImage: `url(${RejosariBg})`,
         }}
