@@ -97,7 +97,7 @@ export default function Navbar() {
             }
           >
             <ul className="bg-white font-lg">
-              <li className="p-[10px] w-screen border-b-2 border-zinc-300">
+              <li className="p-[10px] w-full border-b-2 border-zinc-300">
                 <a href="/" className="hover:text-hijau" onClick={closeNav}>
                   Beranda
                 </a>
