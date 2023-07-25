@@ -1,3 +1,4 @@
+import { Tooltip } from '@chakra-ui/react';
 import Navbar from '../components/Navbar.jsx';
 import RejosariBg from '../assets/rejosari-bg.png';
 import MenuProfile from '../assets/menu_profile.png';
@@ -20,7 +21,7 @@ export default function Home() {
           <div className="text-center">
             <div className="container px-4 mx-auto">
               <div className="max-w-4xl mx-auto text-center">
-                <h2 className="mt-8 mb-6 text-4xl font-bold text-gray-100 lg:text-5xl">
+                <h2 className="mt-8 mb-6 text-3xl font-bold text-gray-100 lg:text-5xl">
                   Selamat Datang di Website Dusun Rejosari!
                 </h2>
                 <p className="max-w-3xl mx-auto mb-10 text-lg text-gray-300">
@@ -30,7 +31,7 @@ export default function Home() {
                 </p>
                 <a
                   className="inline-block w-full px-3 py-3 mb-4 text-gray-100 transition duration-200 border-2 border-transparent rounded bg-hijau md:w-auto md:mr-6 hover:bg-hijau-gelap"
-                  href="#"
+                  href="#news"
                 >
                   Lihat Selengkapnya
                 </a>
@@ -40,7 +41,7 @@ export default function Home() {
         </div>
       </div>
       {/* Menu icons */}
-      <div className="w-full h-[280px] bg-[#F2F2F2]">
+      <div className="w-full h-[280px] bg-[#F2F2F2] mb-[40px]">
         <div className="px-[50px] md:px-[100px] lg:px-[100px] xl:px-[200px] mx-auto flex justify-center items-center h-full">
           <div className="w-1/4 h-[192px] mx-4 flex flex-col items-center text-[#99A2BC]">
             <a className="text-center" href="/">
@@ -65,6 +66,221 @@ export default function Home() {
               <img src={GalleryProfile} alt="" className="h-[160px] mb-2" />
               Galeri
             </a>
+          </div>
+        </div>
+      </div>
+      {/* News & gallery */}
+      <div className="w-full h-[520px]">
+        <div className="px-[50px] md:px-[100px] lg:px-[100px] xl:px-[200px] mx-auto h-full">
+          {/* Header */}
+          <div className="grid grid-cols-12">
+            {/* News */}
+            <div className="flex items-center col-span-7 mr-[15px] border-b border-hijau">
+              <a href="/">
+                <div className="flex items-center">
+                  <div className="text-xl text-hijau mr-[5px] flex items-center">
+                    Berita <span className="ml-[5px] font-bold">Terkini</span>
+                  </div>
+                  <div>
+                    <Tooltip
+                      hasArrow
+                      label="Lihat lainnya"
+                      bg="black"
+                      color="gray.300"
+                      placement="right"
+                    >
+                      <svg
+                        width="15"
+                        height="18"
+                        viewBox="0 0 15 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15 9L0 17.6603L0 0.339746L15 9Z"
+                          fill="#416100"
+                        />
+                      </svg>
+                    </Tooltip>
+                  </div>
+                </div>
+              </a>
+            </div>
+            {/* Gallery */}
+            <div className="flex items-center col-span-5 ml-[15px] border-b border-hijau">
+              <a href="/">
+                <div className="flex items-center">
+                  <div className="text-xl text-hijau mr-[5px] flex items-center">
+                    Galeri <span className="ml-[5px] font-bold">Foto</span>
+                  </div>
+                  <div>
+                    <Tooltip
+                      hasArrow
+                      label="Lihat lainnya"
+                      bg="black"
+                      color="gray.300"
+                      placement="right"
+                    >
+                      <svg
+                        width="15"
+                        height="18"
+                        viewBox="0 0 15 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15 9L0 17.6603L0 0.339746L15 9Z"
+                          fill="#416100"
+                        />
+                      </svg>
+                    </Tooltip>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div className="grid grid-cols-12">
+            {/* News */}
+            <div className="flex items-center col-span-7 mr-[15px] mt-[20px]">
+              {/* News Card 1 */}
+              <div className="news-card w-[250px]">
+                <div className="relative">
+                  <img
+                    src={RejosariBg}
+                    alt="News"
+                    className="w-full h-[186px] object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 p-2 text-sm text-white bg-opacity-50 bg-hijau">
+                    Jun 23, 2023 {/* Replace with the actual date */}
+                  </div>
+                </div>
+                <h3 className="mt-2 text-lg font-bold text-hijau">
+                  News Title
+                </h3>
+                <p className="mt-1 text-gray-500">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vestibulum id facilisis turpis. Proin condimentum, arcu nec
+                  pharetra consequat, ipsum ante dignissim orci, sit amet
+                  posuere risus dui quis quam.
+                </p>
+                <a
+                  href="/"
+                  className="block mt-3 font-bold text-green-500 hover:underline"
+                >
+                  Selengkapnya...
+                </a>
+              </div>
+              {/* News Card 2 */}
+              <div className="news-card w-[250px] ml-[15px]">
+                <div className="relative">
+                  <img
+                    src={RejosariBg}
+                    alt="News"
+                    className="w-full h-[186px] object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 p-2 text-sm text-white bg-opacity-50 bg-hijau">
+                    Jun 23, 2023 {/* Replace with the actual date */}
+                  </div>
+                </div>
+                <h3 className="mt-2 text-lg font-bold text-hijau">
+                  News Title
+                </h3>
+                <p className="mt-1 text-gray-500">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vestibulum id facilisis turpis. Proin condimentum, arcu nec
+                  pharetra consequat, ipsum ante dignissim orci, sit amet
+                  posuere risus dui quis quam.
+                </p>
+                <a
+                  href="/"
+                  className="block mt-3 font-bold text-green-500 hover:underline"
+                >
+                  Selengkapnya...
+                </a>
+              </div>
+              {/* News Card 3 */}
+              <div className="news-card w-[250px] ml-[15px]">
+                <div className="relative">
+                  <img
+                    src={RejosariBg}
+                    alt="News"
+                    className="w-full h-[186px] object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 p-2 text-sm text-white bg-opacity-50 bg-hijau">
+                    Jun 23, 2023 {/* Replace with the actual date */}
+                  </div>
+                </div>
+                <h3 className="mt-2 text-lg font-bold text-hijau">
+                  News Title
+                </h3>
+                <p className="mt-1 text-gray-500">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vestibulum id facilisis turpis. Proin condimentum, arcu nec
+                  pharetra consequat, ipsum ante dignissim orci, sit amet
+                  posuere risus dui quis quam.
+                </p>
+                <a
+                  href="/"
+                  className="block mt-3 font-bold text-green-500 hover:underline"
+                >
+                  Selengkapnya...
+                </a>
+              </div>
+            </div>
+            {/* Gallery */}
+            <div className="flex items-center col-span-5 ml-[15px] mt-[20px]">
+              {/* First Row */}
+              <div className="flex flex-wrap">
+                {/* First Photo Card */}
+                <div className="photo-card relative w-[250px] h-[186px] overflow-hidden mr-2 mb-2">
+                  <img
+                    src={RejosariBg}
+                    alt="Photo 1"
+                    className="object-cover w-full h-full"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full p-2 text-white bg-hijau bg-opacity-60">
+                    Photo 1 Title
+                  </div>
+                </div>
+                {/* Second Photo Card */}
+                <div className="photo-card relative w-[250px] h-[186px] overflow-hidden mb-2">
+                  <img
+                    src={RejosariBg}
+                    alt="Photo 2"
+                    className="object-cover w-full h-full"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full p-2 text-white bg-hijau bg-opacity-60">
+                    Photo 2 Title
+                  </div>
+                </div>
+              </div>
+
+              {/* Second Row */}
+              <div className="flex flex-wrap">
+                {/* Third Photo Card */}
+                <div className="photo-card relative w-[250px] h-[186px] overflow-hidden mr-2 mb-2">
+                  <img
+                    src={RejosariBg}
+                    alt="Photo 3"
+                    className="object-cover w-full h-full"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full p-2 text-white bg-hijau bg-opacity-60">
+                    Photo 3 Title
+                  </div>
+                </div>
+                {/* Fourth Photo Card */}
+                <div className="photo-card relative w-[250px] h-[186px] overflow-hidden mb-2">
+                  <img
+                    src={RejosariBg}
+                    alt="Photo 4"
+                    className="object-cover w-full h-full"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full p-2 text-white bg-hijau bg-opacity-60">
+                    Photo 4 Title
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
