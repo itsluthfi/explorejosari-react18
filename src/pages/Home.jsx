@@ -9,6 +9,7 @@ import UmkmProfile from '../assets/menu_umkm.png';
 import GalleryProfile from '../assets/menu_gallery.png';
 import OrgPaper from '../assets/org_paper.png';
 import OrgRw from '../assets/org_rw.png';
+import Footer from '../components/Footer.jsx';
 
 export default function Home() {
   const positionCenter = [-7.6907, 110.4006];
@@ -375,6 +376,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
