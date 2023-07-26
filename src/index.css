@@ -22,3 +22,32 @@
 .animate-background {
   animation: moveBackground 10s linear infinite; /* Adjust the duration and timing function as needed */
 }
+
+.map-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.map {
+  height: 474px;
+  width: 1140px;
+  border: 1px solid gray;
+  background-color: rgb(125, 193, 220);
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
+/* --- (4) Leaflet container with map dimensions (other properties optional) --- */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.leaflet-control-attribution {
+  font-size: 10px;
+}

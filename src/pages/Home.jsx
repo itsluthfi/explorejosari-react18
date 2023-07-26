@@ -1,3 +1,5 @@
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
 import { Tooltip } from '@chakra-ui/react';
 import Navbar from '../components/Navbar.jsx';
 import RejosariBg from '../assets/rejosari-bg.png';
@@ -9,6 +11,51 @@ import OrgPaper from '../assets/org_paper.png';
 import OrgRw from '../assets/org_rw.png';
 
 export default function Home() {
+  const positionCenter = [-7.6907, 110.4006];
+  // markers
+  const markers = [
+    {
+      id: 1,
+      geocode: [-7.6879, 110.40283],
+      popUp: 'Masjid Zaelani',
+    },
+    {
+      id: 2,
+      geocode: [-7.68759, 110.40309],
+      popUp: 'Rumah RT 01 Rejosari',
+    },
+    {
+      id: 3,
+      geocode: [-7.68714, 110.40265],
+      popUp: 'Rumah RT 02 Rejosari',
+    },
+    {
+      id: 4,
+      geocode: [-7.68738, 110.40242],
+      popUp: 'Rumah RW 20 Rejosari',
+    },
+    {
+      id: 5,
+      geocode: [-7.69442, 110.40046],
+      popUp: 'Balai Padukuhan Rejosari',
+    },
+    {
+      id: 6,
+      geocode: [-7.69442, 110.40035],
+      popUp: 'Rumah Dukuh Rejosari',
+    },
+    {
+      id: 7,
+      geocode: [-7.69332, 110.39962],
+      popUp: 'Lapangan Mrisen',
+    },
+    {
+      id: 7,
+      geocode: [-7.68747, 110.40149],
+      popUp: 'SD Negeri Rejosari',
+    },
+  ];
+
   return (
     <>
       <Navbar />
@@ -301,6 +348,31 @@ export default function Home() {
         <div className="flex flex-wrap items-center justify-center">
           <img src={OrgPaper} className="mr-[15px]" alt="" />
           <img src={OrgRw} className="ml-[15px]" alt="" />
+        </div>
+      </div>
+      {/* Map section */}
+      <div className="w-full">
+        <div className="text-xl text-center text-hijau mt-[40px] mb-[20px]">
+          Peta <span className="font-bold text-hijau">Wilayah Dusun</span>
+        </div>
+        <div className="map-component">
+          <div className="map">
+            <MapContainer
+              center={positionCenter}
+              zoom={16}
+              scrollWheelZoom={true}
+            >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              {markers.map((marker) => (
+                <Marker key="id" position={marker.geocode}>
+                  <Popup>{marker.popUp}</Popup>
+                </Marker>
+              ))}
+            </MapContainer>
+          </div>
         </div>
       </div>
     </>
