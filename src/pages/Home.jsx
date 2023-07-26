@@ -120,12 +120,10 @@ export default function Home() {
         </div>
       </div>
       {/* News & gallery */}
-      <div className="w-full h-[520px]">
-        <div className="px-[50px] md:px-[100px] lg:px-[100px] xl:px-[200px] mx-auto h-full">
-          {/* Header */}
+      <div className="w-full h-auto md:h-[520px]">
+        <div className="px-[10px] md:px-[50px] lg:px-[100px] xl:px-[200px] mx-auto h-full">
           <div className="grid grid-cols-12">
-            {/* News */}
-            <div className="flex items-center col-span-7 mr-[15px] border-b border-hijau">
+            <div className="flex items-center col-span-12 md:col-span-7 mr-0 md:mr-[15px] border-b border-hijau">
               <a href="/">
                 <div className="flex items-center">
                   <div className="text-xl text-hijau mr-[5px] flex items-center">
@@ -156,8 +154,7 @@ export default function Home() {
                 </div>
               </a>
             </div>
-            {/* Gallery */}
-            <div className="flex items-center col-span-5 ml-[15px] border-b border-hijau">
+            <div className="hidden lg:block md:hidden items-center col-span-12 md:col-span-5 mt-5 md:mt-0 ml-0 md:ml-[15px] border-b border-hijau">
               <a href="/">
                 <div className="flex items-center">
                   <div className="text-xl text-hijau mr-[5px] flex items-center">
@@ -190,10 +187,9 @@ export default function Home() {
             </div>
           </div>
           <div className="grid grid-cols-12">
-            {/* News */}
-            <div className="flex items-center col-span-7 mr-[15px] mt-[20px]">
-              {/* News Card 1 */}
-              <div className="news-card w-[250px]">
+            <div className="flex flex-col md:flex-row items-center col-span-12 md:col-span-7 mr-0 md:mr-[15px] mt-[20px]">
+              <div className="news-card w-full md:w-[250px]">
+                {/* News Card 1 */}
                 <div className="relative">
                   <img
                     src={RejosariBg}
@@ -220,8 +216,8 @@ export default function Home() {
                   Selengkapnya...
                 </a>
               </div>
-              {/* News Card 2 */}
-              <div className="news-card w-[250px] ml-[15px]">
+              <div className="news-card w-full md:w-[250px] ml-0 md:ml-[15px] mt-5 md:mt-0">
+                {/* News Card 2 */}
                 <div className="relative">
                   <img
                     src={RejosariBg}
@@ -248,8 +244,8 @@ export default function Home() {
                   Selengkapnya...
                 </a>
               </div>
-              {/* News Card 3 */}
-              <div className="news-card w-[250px] ml-[15px]">
+              <div className="news-card w-full md:w-[250px] ml-0 md:ml-[15px] mt-5 md:mt-0">
+                {/* News Card 3 */}
                 <div className="relative">
                   <img
                     src={RejosariBg}
@@ -277,12 +273,41 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            {/* Gallery */}
-            <div className="flex items-center col-span-5 ml-[15px] mt-[20px]">
-              {/* First Row */}
+            <div className="lg:hidden md:hidden flex items-center col-span-12 md:col-span-5 mt-5 md:mt-0 ml-0 md:ml-[15px] border-b border-hijau">
+              <a href="/">
+                <div className="flex items-center">
+                  <div className="text-xl text-hijau mr-[5px] flex items-center">
+                    Galeri <span className="ml-[5px] font-bold">Foto</span>
+                  </div>
+                  <div>
+                    <Tooltip
+                      hasArrow
+                      label="Lihat lainnya"
+                      bg="black"
+                      color="gray.300"
+                      placement="right"
+                    >
+                      <svg
+                        width="15"
+                        height="18"
+                        viewBox="0 0 15 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15 9L0 17.6603L0 0.339746L15 9Z"
+                          fill="#416100"
+                        />
+                      </svg>
+                    </Tooltip>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="flex flex-col md:flex-row items-center col-span-12 md:col-span-5 ml-0 md:ml-[15px] mt-[20px]">
               <div className="flex flex-wrap">
-                {/* First Photo Card */}
-                <div className="photo-card relative w-[250px] h-[186px] overflow-hidden mr-2 mb-2">
+                <div className="photo-card relative w-full md:w-[250px] h-[186px] md:mr-2 md:mb-2 mb-5 md:mb-0">
+                  {/* First Photo Card */}
                   <img
                     src={RejosariBg}
                     alt="Photo 1"
@@ -292,8 +317,8 @@ export default function Home() {
                     Photo 1 Title
                   </div>
                 </div>
-                {/* Second Photo Card */}
-                <div className="photo-card relative w-[250px] h-[186px] overflow-hidden mb-2">
+                <div className="photo-card relative w-full md:w-[250px] h-[186px] mb-5 md:mb-0">
+                  {/* Second Photo Card */}
                   <img
                     src={RejosariBg}
                     alt="Photo 2"
@@ -304,11 +329,9 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
-              {/* Second Row */}
               <div className="flex flex-wrap">
-                {/* Third Photo Card */}
-                <div className="photo-card relative w-[250px] h-[186px] overflow-hidden mr-2 mb-2">
+                <div className="photo-card relative w-full md:w-[250px] h-[186px] md:mr-2 md:mb-2 mb-5 md:mb-0">
+                  {/* Third Photo Card */}
                   <img
                     src={RejosariBg}
                     alt="Photo 3"
@@ -318,8 +341,8 @@ export default function Home() {
                     Photo 3 Title
                   </div>
                 </div>
-                {/* Fourth Photo Card */}
-                <div className="photo-card relative w-[250px] h-[186px] overflow-hidden mb-2">
+                <div className="photo-card relative w-full md:w-[250px] h-[186px] mb-5 md:mb-0">
+                  {/* Fourth Photo Card */}
                   <img
                     src={RejosariBg}
                     alt="Photo 4"
