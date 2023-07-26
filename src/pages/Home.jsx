@@ -5,6 +5,8 @@ import MenuProfile from '../assets/menu_profile.png';
 import NewsProfile from '../assets/menu_news.png';
 import UmkmProfile from '../assets/menu_umkm.png';
 import GalleryProfile from '../assets/menu_gallery.png';
+import OrgPaper from '../assets/org_paper.png';
+import OrgRw from '../assets/org_rw.png';
 
 export default function Home() {
   return (
@@ -282,6 +284,23 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      {/* Image section */}
+      <div
+        className="w-full h-[200px] bg-center bg-auto"
+        style={{
+          backgroundImage: `url(${RejosariBg})`,
+        }}
+      ></div>
+      {/* Organization section */}
+      <div className="items-center w-full">
+        <div className="text-xl text-center font-bold text-hijau mt-[40px] mb-[20px]">
+          Keorganisasian
+        </div>
+        <div className="flex flex-wrap items-center justify-center">
+          <img src={OrgPaper} className="mr-[15px]" alt="" />
+          <img src={OrgRw} className="ml-[15px]" alt="" />
         </div>
       </div>
     </>
