@@ -14,10 +14,9 @@ export default function Footer() {
                   Kelurahan Sardonoharjo - Kapanewon Ngaglik
                 </p>
                 <p className="text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vestibulum id facilisis turpis. Proin condimentum, arcu nec
-                  pharetra consequat, ipsum ante dignissim orci, sit amet
-                  posuere risus dui quis quam.
+                  Platform informasi digital yang memberikan akses mudah dan
+                  terkini kepada warga dusun mengenai kegiatan masyarakat yang
+                  relevan dan bermanfaat.
                 </p>
               </div>
               <div className="mx-10">
@@ -52,9 +51,16 @@ export default function Footer() {
                   Kontak Kami
                 </h5>
                 <ul className="text-white">
-                  <li className="mb-2">Lorem ipsum</li>
-                  <li className="mb-2">08123456789</li>
-                  <li className="mb-2">lorem@mail.com</li>
+                  <li className="mb-2">
+                    Dusun Rejosari, Padukuhan Rejosari, Sardonoharjo, Ngaglik,
+                    Sleman, DIY
+                  </li>
+                  <li className="mb-2">
+                    <a href="tel:+628123456789">+62 812 3456 789</a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="mailto:example@mail.com">example@mail.com</a>
+                  </li>
                 </ul>
               </div>
             </div>

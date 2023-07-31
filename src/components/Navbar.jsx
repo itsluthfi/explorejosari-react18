@@ -69,7 +69,7 @@ export default function Navbar() {
               </li>
               <li className="mr-[30px] flex">
                 <img className="mr-[5px]" src={ic_smes} alt="" />
-                <a href="/" className="hover:text-hijau-gelap">
+                <a href="/umkm" className="hover:text-hijau-gelap">
                   UMKM
                 </a>
               </li>
