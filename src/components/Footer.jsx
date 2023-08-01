@@ -1,7 +1,10 @@
 export default function Footer() {
   return (
     <>
-      <footer className="px-10 py-20 mt-[40px] bg-hijau md:pt-75 sm:py-6 md:px-20 lg:px-40 xl:px-60">
+      <footer
+        id="kontak"
+        className="px-10 py-20 mt-[40px] bg-hijau md:pt-75 sm:py-6 md:px-20 lg:px-40 xl:px-60"
+      >
         <div className="flex md:flex md:justify-between">
           <div className="flex-1 mb-6 md:mb-0">
             <div className="grid grid-cols-2 gap-6 md:grid-cols-3">

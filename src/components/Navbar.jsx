@@ -57,13 +57,13 @@ export default function Navbar() {
               </li>
               <li className="mr-[30px] flex">
                 <img className="mr-[5px]" src={ic_profile} alt="" />
-                <a href="/" className="hover:text-hijau-gelap">
+                <a href="/profil" className="hover:text-hijau-gelap">
                   Profil Dusun
                 </a>
               </li>
               <li className="mr-[30px] flex">
                 <img className="mr-[5px]" src={ic_news} alt="" />
-                <a href="/" className="hover:text-hijau-gelap">
+                <a href="/berita" className="hover:text-hijau-gelap">
                   Berita & Informasi
                 </a>
               </li>
@@ -75,13 +75,13 @@ export default function Navbar() {
               </li>
               <li className="mr-[30px] flex">
                 <img className="mr-[5px]" src={ic_gallery} alt="" />
-                <a href="/" className="hover:text-hijau-gelap">
+                <a href="/galeri" className="hover:text-hijau-gelap">
                   Galeri
                 </a>
               </li>
               <li className="flex">
                 <img className="mr-[5px]" src={ic_contact} alt="" />
-                <a href="/" className="hover:text-hijau-gelap">
+                <a href="#kontak" className="hover:text-hijau-gelap">
                   Kontak
                 </a>
               </li>
