@@ -3,10 +3,18 @@ import 'leaflet/dist/leaflet.css';
 import { Tooltip } from '@chakra-ui/react';
 import Navbar from '../components/Navbar.jsx';
 import RejosariBg from '../assets/rejosari-bg.png';
+import RejosariBg2 from '../assets/rejosari-bg2.jpg';
 import MenuProfile from '../assets/menu_profile.png';
 import NewsProfile from '../assets/menu_news.png';
 import UmkmProfile from '../assets/menu_umkm.png';
 import GalleryProfile from '../assets/menu_gallery.png';
+import News1 from '../assets/news_1.jpg';
+import News2 from '../assets/news_2.jpg';
+import News3 from '../assets/news_3.jpg';
+import Gale1 from '../assets/gale_1.jpg';
+import Gale2 from '../assets/gale_2.jpg';
+import Gale3 from '../assets/gale_3.jpg';
+import Gale4 from '../assets/gale_4.jpg';
 import OrgPaper from '../assets/org_paper.png';
 import OrgRw from '../assets/org_rw.png';
 import Footer from '../components/Footer.jsx';
@@ -81,7 +89,7 @@ export default function Home() {
                 </p>
                 <a
                   className="inline-block w-full px-3 py-3 mb-4 text-gray-100 transition duration-200 border-2 border-transparent rounded bg-hijau md:w-auto md:mr-6 hover:bg-hijau-gelap"
-                  href="#news"
+                  href="#berita"
                 >
                   Lihat Selengkapnya
                 </a>
@@ -94,25 +102,25 @@ export default function Home() {
       <div className="w-full h-[280px] bg-[#F2F2F2] mb-[40px]">
         <div className="px-[50px] md:px-[100px] lg:px-[100px] xl:px-[200px] mx-auto flex justify-center items-center h-full">
           <div className="w-1/4 h-[192px] mx-4 flex flex-col items-center text-[#99A2BC]">
-            <a className="text-center" href="/">
+            <a className="text-center" href="/profil">
               <img src={MenuProfile} alt="" className="h-[160px] mb-2" />
               Profil Dusun
             </a>
           </div>
           <div className="w-1/4 h-[192px] mx-4 flex flex-col items-center text-[#99A2BC]">
-            <a className="text-center" href="/">
+            <a className="text-center" href="/berita">
               <img src={NewsProfile} alt="" className="h-[160px] mb-2" />
               Berita & Informasi
             </a>
           </div>
           <div className="w-1/4 h-[192px] mx-4 flex flex-col items-center text-[#99A2BC]">
-            <a className="text-center" href="/">
+            <a className="text-center" href="/umkm">
               <img src={UmkmProfile} alt="" className="h-[160px] mb-2" />
               UMKM
             </a>
           </div>
           <div className="w-1/4 h-[192px] mx-4 flex flex-col items-center text-[#99A2BC]">
-            <a className="text-center" href="/">
+            <a className="text-center" href="/galeri">
               <img src={GalleryProfile} alt="" className="h-[160px] mb-2" />
               Galeri
             </a>
@@ -120,7 +128,7 @@ export default function Home() {
         </div>
       </div>
       {/* News & gallery */}
-      <div className="w-full h-auto md:h-[520px]">
+      <div id="berita" className="w-full h-auto md:h-[520px]">
         <div className="px-[10px] md:px-[50px] lg:px-[100px] xl:px-[200px] mx-auto h-full">
           <div className="grid grid-cols-12">
             <div className="flex items-center col-span-12 md:col-span-7 mr-0 md:mr-[15px] border-b border-hijau">
@@ -192,22 +200,22 @@ export default function Home() {
                 {/* News Card 1 */}
                 <div className="relative">
                   <img
-                    src={RejosariBg}
+                    src={News1}
                     alt="News"
                     className="w-full h-[186px] object-cover"
                   />
                   <div className="absolute bottom-0 left-0 p-2 text-sm text-white bg-opacity-50 bg-hijau">
-                    Jun 23, 2023 {/* Replace with the actual date */}
+                    Jul 15, 2023 {/* Replace with the actual date */}
                   </div>
                 </div>
                 <h3 className="mt-2 text-lg font-bold text-hijau">
-                  News Title
+                  Sosialisasi Potensi Desa Wisata dan Pembuatan...
                 </h3>
                 <p className="mt-1 text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vestibulum id facilisis turpis. Proin condimentum, arcu nec
-                  pharetra consequat, ipsum ante dignissim orci, sit amet
-                  posuere risus dui quis quam.
+                  Mahasiswa KKN-PPM UGM Sub Unit Dusun Rejosari melakukan
+                  sosialisasi potensi desa wisata dan pembuatan pestisida yang
+                  dilaksanakan bersamaan dengan pertemuan kelompok tani Dusun
+                  Rejosari.
                 </p>
                 <a
                   href="/"
@@ -220,22 +228,21 @@ export default function Home() {
                 {/* News Card 2 */}
                 <div className="relative">
                   <img
-                    src={RejosariBg}
+                    src={News2}
                     alt="News"
                     className="w-full h-[186px] object-cover"
                   />
                   <div className="absolute bottom-0 left-0 p-2 text-sm text-white bg-opacity-50 bg-hijau">
-                    Jun 23, 2023 {/* Replace with the actual date */}
+                    Jul 18, 2023 {/* Replace with the actual date */}
                   </div>
                 </div>
                 <h3 className="mt-2 text-lg font-bold text-hijau">
-                  News Title
+                  Kegiatan KKN-PPM UGM di TPA Masjid Zaelani
                 </h3>
                 <p className="mt-1 text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vestibulum id facilisis turpis. Proin condimentum, arcu nec
-                  pharetra consequat, ipsum ante dignissim orci, sit amet
-                  posuere risus dui quis quam.
+                  Berbagai kegiatan dilaksanakan oleh mahasiswa KKN-PPM UGM Sub
+                  Unit Dusun Rejosari di TPA Masjid Zaelani seperti sosialisasi
+                  pentingnya hidup sehat dan pengenalan emosi.
                 </p>
                 <a
                   href="/"
@@ -248,22 +255,21 @@ export default function Home() {
                 {/* News Card 3 */}
                 <div className="relative">
                   <img
-                    src={RejosariBg}
+                    src={News3}
                     alt="News"
                     className="w-full h-[186px] object-cover"
                   />
                   <div className="absolute bottom-0 left-0 p-2 text-sm text-white bg-opacity-50 bg-hijau">
-                    Jun 23, 2023 {/* Replace with the actual date */}
+                    Jul 29, 2023 {/* Replace with the actual date */}
                   </div>
                 </div>
                 <h3 className="mt-2 text-lg font-bold text-hijau">
-                  News Title
+                  Sosialisasi UMKM di Pertemuan PKK...
                 </h3>
                 <p className="mt-1 text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vestibulum id facilisis turpis. Proin condimentum, arcu nec
-                  pharetra consequat, ipsum ante dignissim orci, sit amet
-                  posuere risus dui quis quam.
+                  Mahasiswa KKN-PPM UGM Sub Unit Dusun Rejosari melakukan
+                  sosialisasi UMKM seperti rencana pemasaran, pendaftaran
+                  E-Commerce, dan potensi wilayah Padukuhan Rejosari.
                 </p>
                 <a
                   href="/"
@@ -309,23 +315,23 @@ export default function Home() {
                 <div className="photo-card relative w-full md:w-[250px] h-[186px] md:mr-2 md:mb-2 mb-5 md:mb-0">
                   {/* First Photo Card */}
                   <img
-                    src={RejosariBg}
+                    src={Gale1}
                     alt="Photo 1"
                     className="object-cover w-full h-full"
                   />
                   <div className="absolute bottom-0 left-0 w-full p-2 text-white bg-hijau bg-opacity-60">
-                    Photo 1 Title
+                    Lomba Takbir Keliling 2023
                   </div>
                 </div>
                 <div className="photo-card relative w-full md:w-[250px] h-[186px] mb-5 md:mb-0">
                   {/* Second Photo Card */}
                   <img
-                    src={RejosariBg}
+                    src={Gale2}
                     alt="Photo 2"
                     className="object-cover w-full h-full"
                   />
                   <div className="absolute bottom-0 left-0 w-full p-2 text-white bg-hijau bg-opacity-60">
-                    Photo 2 Title
+                    Penyambutan Mahasiswa...
                   </div>
                 </div>
               </div>
@@ -333,23 +339,23 @@ export default function Home() {
                 <div className="photo-card relative w-full md:w-[250px] h-[186px] md:mr-2 md:mb-2 mb-5 md:mb-0">
                   {/* Third Photo Card */}
                   <img
-                    src={RejosariBg}
+                    src={Gale3}
                     alt="Photo 3"
                     className="object-cover w-full h-full"
                   />
                   <div className="absolute bottom-0 left-0 w-full p-2 text-white bg-hijau bg-opacity-60">
-                    Photo 3 Title
+                    Penyembelihan Qurban...
                   </div>
                 </div>
                 <div className="photo-card relative w-full md:w-[250px] h-[186px] mb-5 md:mb-0">
                   {/* Fourth Photo Card */}
                   <img
-                    src={RejosariBg}
+                    src={Gale4}
                     alt="Photo 4"
                     className="object-cover w-full h-full"
                   />
                   <div className="absolute bottom-0 left-0 w-full p-2 text-white bg-hijau bg-opacity-60">
-                    Photo 4 Title
+                    Pembuatan Pestisida...
                   </div>
                 </div>
               </div>
@@ -359,9 +365,9 @@ export default function Home() {
       </div>
       {/* Image section */}
       <div
-        className="w-full h-[200px] bg-center bg-auto"
+        className="w-full h-[400px] bg-center bg-cover"
         style={{
-          backgroundImage: `url(${RejosariBg})`,
+          backgroundImage: `url(${RejosariBg2})`,
         }}
       ></div>
       {/* Organization section */}
