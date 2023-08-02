@@ -103,27 +103,43 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="p-[10px] w-full border-b-2 border-zinc-300">
-                <a href="/" className="hover:text-hijau" onClick={closeNav}>
+                <a
+                  href="/profil"
+                  className="hover:text-hijau"
+                  onClick={closeNav}
+                >
                   Profil Dusun
                 </a>
               </li>
               <li className="p-[10px] w-full border-b-2 border-zinc-300">
-                <a href="/" className="hover:text-hijau" onClick={closeNav}>
+                <a
+                  href="/berita"
+                  className="hover:text-hijau"
+                  onClick={closeNav}
+                >
                   Berita & Informasi
                 </a>
               </li>
               <li className="p-[10px] w-full border-b-2 border-zinc-300">
-                <a href="/" className="hover:text-hijau" onClick={closeNav}>
+                <a href="/umkm" className="hover:text-hijau" onClick={closeNav}>
                   UMKM
                 </a>
               </li>
               <li className="p-[10px] w-full border-b-2 border-zinc-300">
-                <a href="/" className="hover:text-hijau" onClick={closeNav}>
+                <a
+                  href="/galeri"
+                  className="hover:text-hijau"
+                  onClick={closeNav}
+                >
                   Galeri
                 </a>
               </li>
               <li className="p-[10px] w-full border-b-2 border-zinc-300">
-                <a href="/" className="hover:text-hijau" onClick={closeNav}>
+                <a
+                  href="#kontak"
+                  className="hover:text-hijau"
+                  onClick={closeNav}
+                >
                   Kontak
                 </a>
               </li>
