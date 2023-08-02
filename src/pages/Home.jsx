@@ -132,7 +132,7 @@ export default function Home() {
         <div className="px-[10px] md:px-[50px] lg:px-[100px] xl:px-[200px] mx-auto h-full">
           <div className="grid grid-cols-12">
             <div className="flex items-center col-span-12 md:col-span-7 mr-0 md:mr-[15px] border-b border-hijau">
-              <a href="/">
+              <a href="/berita">
                 <div className="flex items-center">
                   <div className="text-xl text-hijau mr-[5px] flex items-center">
                     Berita <span className="ml-[5px] font-bold">Terkini</span>
@@ -163,7 +163,7 @@ export default function Home() {
               </a>
             </div>
             <div className="hidden lg:block md:hidden items-center col-span-12 md:col-span-5 mt-5 md:mt-0 ml-0 md:ml-[15px] border-b border-hijau">
-              <a href="/">
+              <a href="/galeri">
                 <div className="flex items-center">
                   <div className="text-xl text-hijau mr-[5px] flex items-center">
                     Galeri <span className="ml-[5px] font-bold">Foto</span>
