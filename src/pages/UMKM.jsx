@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar';
 import Breadcrumbs from '../components/Breadcrumbs';
-import UMKMTable from '../components/UmkmTable';
+import UMKMTable from '../components/UMKMTable';
 import Footer from '../components/Footer';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
